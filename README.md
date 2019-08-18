@@ -24,8 +24,6 @@ echo "ro.build.version.security_patch_orig=$PLATFORM_SECURITY_PATCH"
 
 And you need to increase the PLATFORM_VERSION to 16.1.0 in build/core/version_defaults.mk to override Google's anti-rollback features
 
-```
-
 Finally execute these:
 
 ```
@@ -41,3 +39,4 @@ To test it:
 fastboot boot out/target/product/shark/recovery.img
 ```
 
+Thanks to @Mauronofrio for the Black Shark device files!
