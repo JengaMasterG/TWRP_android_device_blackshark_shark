@@ -30,7 +30,7 @@ Finally execute these:
 ```
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
-lunch omni_enchilada-eng 
+lunch omni_shark-eng 
 mka adbd recoveryimage 
 ```
 
