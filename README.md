@@ -16,12 +16,13 @@ Then add these projects to .repo/manifest.xml:
 ```
 
 To make all works you need to modify the buildinfo.sh in build/tools
-echo "ro.build.version.release=$PLATFORM_VERSION"
+```echo "ro.build.version.release=$PLATFORM_VERSION"
 echo "ro.build.version.security_patch=$PLATFORM_SECURITY_PATCH"
+```
 to
-echo "ro.build.version.release_orig=$PLATFORM_VERSION"
+```echo "ro.build.version.release_orig=$PLATFORM_VERSION"
 echo "ro.build.version.security_patch_orig=$PLATFORM_SECURITY_PATCH"
-
+```
 And you need to increase the PLATFORM_VERSION to 16.1.0 in build/core/version_defaults.mk to override Google's anti-rollback features
 
 Finally execute these:
