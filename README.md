@@ -5,14 +5,14 @@
 First checkout minimal twrp with omnirom tree:
 
 ```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
+repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 repo sync
 ```
 
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/blackshark/shark" name="mauronofrio/android_device_blackshark_shark" remote="github" revision="android-8.1" />
+<project path="device/blackshark/shark" name="JengaMasterG/android_device_blackshark_shark" remote="github" revision="android-9.0" />
 ```
 
 To make all works you need to modify the buildinfo.sh in build/tools
