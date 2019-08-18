@@ -55,6 +55,9 @@ TARGET_PREBUILT_KERNEL := device/blackshark/shark/prebuilt/Image.gz-dtb
 TARGET_BOARD_PLATFORM := sdm845
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
+# Missing Dependency Flag
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 
@@ -98,7 +101,7 @@ RECOVERY_TOUCHSCREEN_SWAP_XY := true
 
 # Encryption
 PLATFORM_SECURITY_PATCH := 2025-12-31
-#TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 
 # Extras
 BOARD_SUPPRESS_SECURE_ERASE := true
